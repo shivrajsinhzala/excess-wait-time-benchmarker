@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excess-wait-time-benchmarker"
+version = "1.0.0"
+description = "Transit benchmark suite measuring Actual Wait Time (AWT), Scheduled Wait Time (SWT), and Excess Wait Time (EWT) from GTFS headway streams."
+readme = "README.md"
+authors = [{ name = "Shivrajsinh Zala", email = "zalashivraj2642003@gmail.com" }]
+license = { text = "MIT" }
+keywords = ["transit-benchmarking", "excess-wait-time", "headway", "gtfs-rt", "transit-reliability", "service-quality", "transportation-metrics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+urls = { Homepage = "https://headway.shivrajsinh.in", Repository = "https://github.com/shivrajsinhzala/excess-wait-time-benchmarker", "Stopwatch Transit" = "https://transit.shivrajsinh.in" }
+
+[project.scripts]
+ewt-benchmark = "ewt_benchmarker.cli:main"
